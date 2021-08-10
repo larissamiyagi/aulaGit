@@ -1,0 +1,42 @@
+# Configuração no git bash
+
+git config --global user.name "Larissa Miyagi"
+git config --global user.email "larissamiyagi@gmail.com"
+
+# Criação de um repositório inclado com uma pasta no pc
+Crie um arquivo dentro de uma pasta.
+
+Criar um repositório novo no gitHub (web)
+Dentro da página, achar a seção:
+"…or create a new repository on the command line"
+
+Dentro da pasta criada, clicar com o botão direito e abrir "Git Bash Here".
+Dentro do git bash, colocar os comandos indicados no github. Exemplo:
+
+echo "# teste" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/larissamiyagi/teste.git
+git push -u origin main
+
+
+# Incluir arquivo no repositório via VS Code
+Source control -> Changes -> + (cria um "stage")
+Digite a mensagem descrevendo a mudança e cliquei no Check (faz o commit)
+Clica nos 3 pontos e "Push" (envia para a nuvem no github)
+
+Basta atualizar a página do repositório no navegador web para visualizar o arquivo atualizado
+
+# Para colaborar em repositório de outra pessoa
+Abrir nova pasta
+Clicar com direito abrir git bash e colocar
+git clone "endereço do github do amiguinho"
+
+# Buscar atualizações da nuvem
+Clica nos 3 pontos -> Pull, Push -> Fetch/Buscar
+Ele vai mostrar as diferenças entre a sua versão local e a nuvem
+Clicando no botão de atualizar (em baixo à esquerda), ele já faz o pull de todos os commits pendentes na versão local
+
+Sempre fazer pull antes de push (o próprio Git nao permite fazer push se tiver atualizações na nuvem).
